@@ -21,7 +21,7 @@ app.use("/api/user/", userRouter);
 
 // PORT
 connectDB();
-const PORT = 4000;
+const PORT = 22;
 
 // Listening to the server
  app.listen(PORT, () => {
