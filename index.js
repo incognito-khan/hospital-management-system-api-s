@@ -16,6 +16,10 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+ res.json('API is running!');
+})
+
 // API Routes
 app.use("/api/user/", userRouter);
 
